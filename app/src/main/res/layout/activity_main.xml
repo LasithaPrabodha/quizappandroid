@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/questionID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.125"
+        android:paddingTop="16dp"
+        android:fontFamily="@font/fm_samantha"
+        android:text="@string/question_sin"
+        android:textAlignment="center"
+        android:textSize="40sp" />
+
+    <ImageView
+        android:id="@+id/question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:paddingBottom="25dp"
+        android:src="@drawable/question" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.125">
+
+        <ImageButton
+            android:id="@+id/a1"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="@drawable/imageview_border"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/a1"
+            app:layout_constraintEnd_toStartOf="@+id/a2"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/a2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="#00000000"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/a2"
+            app:layout_constraintEnd_toStartOf="@+id/a3"
+            app:layout_constraintStart_toEndOf="@+id/a1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/a3"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="#00000000"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/a3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/a2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.125">
+
+        <ImageButton
+            android:id="@+id/a4"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="#00000000"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/a4"
+            app:layout_constraintEnd_toStartOf="@+id/a5"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/a5"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="#00000000"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/a5"
+            app:layout_constraintEnd_toStartOf="@+id/a6"
+            app:layout_constraintStart_toEndOf="@+id/a4"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageButton
+            android:id="@+id/a6"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:background="#00000000"
+            android:padding="2dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/a6"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/a5"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:minWidth="100dp"
+            android:minHeight="100dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_forward" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/fm_samantha"
+            android:text="@string/next_sin"/>
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/timeLeft"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="12dp"
+        android:progress="25"
+        android:theme="@style/ProgressBarTheme" />
+
+</LinearLayout>

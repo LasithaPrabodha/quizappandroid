@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "337909829232",
+    "firebase_url": "https://ladyridgewayquiz.firebaseio.com",
+    "project_id": "ladyridgewayquiz",
+    "storage_bucket": "ladyridgewayquiz.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:337909829232:android:f739f4fdb1808402ee2eb5",
+        "android_client_info": {
+          "package_name": "com.sliitresearch.ladyridgewayquizapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "337909829232-b9g4cdb1vmbefibauf21aa6somvhlhb7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBYear719wXS2t4syGRrK7ufl7WiZk6ZN0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "337909829232-b9g4cdb1vmbefibauf21aa6somvhlhb7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
